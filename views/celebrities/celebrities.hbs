@@ -1,0 +1,17 @@
+<h2>Celebrities</h2>
+
+<ul>
+  {{#each allCelebrities}}
+    <li>
+      <p>{{this.name}}</p>
+      <p>{{this.occupation}}</p>
+      <p>{{this.catchPhrase}}</p>
+      <!--<a href="/drones/{{this._id}}/update">Edit</a>
+
+      <form action="/drones/{{this._id}}/delete" method="post">
+        <button>Delete</button>
+      </form>-->
+    </li>
+
+  {{/each}}
+</ul>
