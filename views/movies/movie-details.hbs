@@ -1,0 +1,16 @@
+<h2>Movies details</h2>
+
+<p>Title: {{oneMovie.title}}</p>
+<p>Genre: {{oneMovie.genre}}</p>
+<p>Plot: {{oneMovie.plot}}</p>
+<ul><p>Cast:</p>
+  <li><p>Name: {{oneMovie.cast.name}}</p></li>
+  <li><p>Occupation: {{oneMovie.cast.occupation}}</p></li>
+  <li><p>CatchPhrase: {{oneMovie.cast.catchPhrase}}</p></li>
+</ul>
+
+<form action="/movies/{{oneMovie._id}}/delete" method="post">
+  <button>Delete</button>
+</form>
+<br />
+<a href="/movies/{{oneMovie._id}}/update">Update the movie</a>
